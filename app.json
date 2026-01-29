@@ -1,0 +1,47 @@
+{
+  "expo": {
+    "name": "QuieTravel",
+    "slug": "quietravel",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/icon.png",
+    "userInterfaceStyle": "light",
+    "newArchEnabled": true,
+    "splash": {
+      "image": "./assets/splash-icon.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#EFEDF0"
+    },
+    "android": {
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/adaptive-icon.png",
+        "backgroundColor": "#EFEDF0"
+      },
+      "edgeToEdgeEnabled": true,
+      "package": "com.quietravel.app"
+    },
+    "ios": {
+      "supportsTablet": true,
+      "bundleIdentifier": "com.quietravel.app"
+    },
+    "web": {
+      "favicon": "./assets/favicon.png",
+      "bundler": "metro"
+    },
+    "plugins": [
+      [
+        "expo-location",
+        {
+          "locationAlwaysAndWhenInUsePermission": "Allow QuieTravel to access your location."
+        }
+      ],
+      [
+        "expo-notifications",
+        {
+          "icon": "./assets/notification-icon.png",
+          "color": "#7C5FBA"
+        }
+      ]
+    ]
+  }
+}
