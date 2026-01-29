@@ -5,6 +5,10 @@ import { Ionicons } from '@expo/vector-icons';
 import { SafeAreaProvider } from 'react-native-safe-area-context';
 
 import HomeScreen from './src/screens/HomeScreen';
+import IspirazioniScreen from './src/screens/IspirazioniScreen';
+import PianificaScreen from './src/screens/PianificaScreen';
+import VicinoScreen from './src/screens/VicinoScreen';
+import ProfiloScreen from './src/screens/ProfiloScreen';
 import { colors } from './src/constants/theme';
 
 const Tab = createBottomTabNavigator();
@@ -68,22 +72,22 @@ export default function App() {
           />
           <Tab.Screen 
             name="Ispirazioni" 
-            component={HomeScreen}
+            component={IspirazioniScreen}
             options={{ tabBarLabel: 'Ispirazioni' }}
           />
           <Tab.Screen 
             name="Pianifica" 
-            component={HomeScreen}
+            component={PianificaScreen}
             options={{ tabBarLabel: 'Pianifica' }}
           />
           <Tab.Screen 
             name="Vicino" 
-            component={HomeScreen}
+            component={VicinoScreen}
             options={{ tabBarLabel: 'Vicino a me' }}
           />
           <Tab.Screen 
             name="Profilo" 
-            component={HomeScreen}
+            component={ProfiloScreen}
             options={{ tabBarLabel: 'Profilo' }}
           />
         </Tab.Navigator>
